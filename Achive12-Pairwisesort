@@ -1,0 +1,13 @@
+public static Node pairwiseSwap(Node node)
+    {
+        Node temp = node ;
+         while (temp != null && temp.next != null) { 
+  
+            /* Swap the data */
+            int k = temp.data; 
+            temp.data = temp.next.data; 
+            temp.next.data = k; 
+            temp = temp.next.next; 
+        } 
+       return node ;
+    }
